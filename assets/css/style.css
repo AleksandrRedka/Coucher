@@ -55,7 +55,7 @@ h3 {
   border: 1px solid transparent;
   border-radius: 10px;
   background-color: #FF4B4B;
-  transition: border 500ms 800ms;
+  transition: border 500ms;
   height: 50px;
   outline: none;
   font-size: 2rem;
@@ -66,7 +66,8 @@ h3 {
   padding: 1rem 7rem;
 }
 .btn:hover {
-  border: 1px solid #FFFFFF;
+  background-color: #FC2E2E;
+  border: 2px solid #FFFFFF;
   transition: border 500ms;
 }
 
@@ -74,10 +75,43 @@ h3 {
   padding-top: 18rem;
   position: relative;
 }
+@media screen and (max-width: 1280px) {
+  .main_wrapper {
+    padding-top: 25rem;
+  }
+}
 @media screen and (min-width: 1400px) {
   .main_wrapper {
     padding-top: 19rem;
   }
+}
+
+.button_up {
+  position: fixed;
+  z-index: 90;
+  bottom: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.button_up_icon {
+  width: 4rem;
+  height: 4rem;
+}
+.button_up_icon > img {
+  width: 100%;
+  height: auto;
+}
+.button_up_text {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #535353;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* montserrat-100 - latin */
@@ -553,7 +587,7 @@ h3 {
 .main_wrapper_photo_border {
   height: 90vh;
   position: absolute;
-  bottom: 4%;
+  bottom: 3.6%;
   right: 8%;
   opacity: 0.5;
   z-index: 5;
@@ -587,6 +621,19 @@ h3 {
   height: 100%;
 }
 
+.icon_play {
+  position: absolute;
+  width: 5rem;
+  height: 3.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon_play > img {
+  width: 100%;
+  height: 100%;
+}
+
 .bnt_header {
   height: 7rem;
   position: absolute;
@@ -600,14 +647,16 @@ h3 {
   color: #FFFFFF;
   line-height: 3.6rem;
 }
-.bnt_header:hover {
-  border: 2px solid #FFFFFF;
+@media screen and (max-width: 1300px) {
+  .bnt_header {
+    font-size: 2.4rem;
+  }
 }
 
 .what_it_coaching {
   position: relative;
   padding: 0 13rem;
-  padding-top: 35rem;
+  padding-top: 30rem;
   padding-bottom: 17rem;
   overflow: hidden;
 }
@@ -618,7 +667,7 @@ h3 {
   font-size: 50rem;
   line-height: 50rem;
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -719,9 +768,12 @@ h3 {
   padding-bottom: 40rem;
   overflow: hidden;
 }
+.benefit_coaching_bg_title {
+  top: -7%;
+}
 .benefit_coaching_title {
   text-align: center;
-  margin-bottom: 50rem;
+  margin-bottom: 40rem;
 }
 .benefit_coaching_img_wrapper {
   display: flex;
@@ -750,7 +802,7 @@ h3 {
   text-align: center;
 }
 .benefit_coaching_img_item:nth-child(2) {
-  top: -80%;
+  top: -60%;
   right: 0%;
 }
 .benefit_coaching_img_item:nth-child(2):before {
@@ -763,14 +815,14 @@ h3 {
   opacity: 0.2;
   position: absolute;
   top: -200%;
-  left: 30%;
+  left: 27%;
 }
 .benefit_coaching_img_item:nth-child(2):after {
   content: "";
   width: 2px;
   height: 50px;
   background-color: #FF4B4B;
-  bottom: -15rem;
+  bottom: -9rem;
   left: 50%;
   position: absolute;
 }
@@ -813,7 +865,7 @@ h3 {
   opacity: 0.2;
   position: absolute;
   top: -200%;
-  left: 25%;
+  left: 27%;
 }
 .benefit_coaching_img_item:nth-child(4):after {
   content: "";
@@ -880,6 +932,45 @@ h3 {
   height: auto;
   z-index: 1;
 }
+.section_statistics_bg_elem_one {
+  position: absolute;
+  z-index: 2;
+  top: -65%;
+  left: 4%;
+  height: 60vh;
+  transform: rotate(0deg);
+  opacity: 0.5;
+}
+.section_statistics_bg_elem_one > img {
+  width: 100%;
+  height: 100%;
+}
+.section_statistics_bg_elem_two {
+  position: absolute;
+  z-index: 2;
+  top: -45%;
+  left: 31%;
+  height: 60vh;
+  transform: rotate(-55deg);
+  opacity: 0.5;
+}
+.section_statistics_bg_elem_two > img {
+  width: 100%;
+  height: 100%;
+}
+.section_statistics_bg_elem_three {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  top: -65%;
+  height: 60vh;
+  transform: rotate(25deg);
+  opacity: 0.5;
+}
+.section_statistics_bg_elem_three > img {
+  width: 100%;
+  height: 100%;
+}
 .section_statistics_item {
   position: relative;
   z-index: 5;
@@ -935,14 +1026,16 @@ h3 {
 }
 .process_work_list_item_circle {
   position: absolute;
-  top: 15%;
-  left: 5%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
   content: "";
   width: 5.5rem;
   height: 5.5rem;
   background-color: #ffffff;
   border-radius: 50%;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 black;
+  transform: translate(-50%, -50%);
 }
 .process_work_list_item_title {
   font-family: "Montserrat", sans-serif;
@@ -996,6 +1089,7 @@ h3 {
   padding: 10rem 13rem;
   background-color: #F1F1F1;
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .your_result_title {
   padding-top: 7rem;
@@ -1048,7 +1142,7 @@ h3 {
 }
 
 .opportunities {
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-left: 13rem;
   overflow: hidden;
   position: relative;
@@ -1059,7 +1153,7 @@ h3 {
 .opportunities_numbers {
   position: absolute;
   width: calc(100% - 23rem);
-  top: 33.5rem;
+  top: 28.5rem;
   right: 0%;
   padding-left: 3rem;
   padding-right: 13rem;
@@ -1069,7 +1163,7 @@ h3 {
   justify-content: space-between;
 }
 .opportunities_numbers_num {
-  width: 25%;
+  width: 26%;
   height: 30rem;
   position: relative;
   display: flex;
@@ -1291,6 +1385,7 @@ h3 {
   padding-top: 15rem;
   padding-bottom: 10rem;
   position: relative;
+  overflow: hidden;
 }
 .about_me_title {
   margin-bottom: 3rem;

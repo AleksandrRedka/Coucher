@@ -69,9 +69,11 @@ $(document).ready(
 $(document).on('scroll', function () {
     let lengthScroll = $(document).scrollTop();
     if (lengthScroll > 650) {
-        $('.header').css('background-color','rgba(159,159,159,0.7)')
+        $('.header').css('background-color','rgba(159,159,159,0.7)');
+        $('.button_up').css('opacity','1');
     } else {
         $('.header').css('background-color','')
+        $('.button_up').css('opacity','0');
     }
 });
 
