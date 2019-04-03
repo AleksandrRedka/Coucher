@@ -89,8 +89,8 @@ h3 {
 .button_up {
   position: fixed;
   z-index: 90;
-  bottom: 10%;
-  right: 10%;
+  bottom: 5%;
+  right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -694,7 +694,7 @@ h3 {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 16vh 3vw;
+  padding: 8vh 3vw;
   overflow: hidden;
   z-index: 2;
   box-shadow: 40px 40px 30px 0 rgba(0, 0, 0, 0.12);
@@ -1085,6 +1085,7 @@ h3 {
 }
 
 .your_result {
+  width: 100%;
   position: relative;
   padding: 10rem 13rem;
   background-color: #F1F1F1;
@@ -1142,6 +1143,7 @@ h3 {
 }
 
 .opportunities {
+  width: 100%;
   padding-top: 15rem;
   padding-left: 13rem;
   overflow: hidden;
@@ -1327,7 +1329,7 @@ h3 {
 }
 
 .wrapper_motivation {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 1;
