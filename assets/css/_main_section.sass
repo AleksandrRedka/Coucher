@@ -1,0 +1,148 @@
+.main_section
+  padding: 0 13rem
+  padding-bottom: 22rem
+  &_bg
+    position: absolute
+    z-index: -1
+    height: auto
+    width: 100vw
+    min-height: 100vh
+    overflow: hidden
+    top: 0
+    left: 0
+
+    &>img
+      width: 100vw
+      height: 100vh
+    &:before
+      position: absolute
+      z-index: 0
+      top: 0
+      left: 0
+      content: ""
+      width: 100%
+      height: 100%
+      background-color: rgba(159,159,159,0.7)
+
+
+
+.main_center_text
+  padding-left: 15vw
+  margin-bottom: 4vh
+  position: relative
+  z-index: 10
+.main_title
+  font-family: $fontF
+  font-weight: 700
+.main_subtitle_slogan
+  font-family: $fontF
+  font-weight: 700
+  font-size: 3rem
+  line-height: 3.6rem
+  color: $white
+  margin-bottom: 6vh
+  @media screen and (max-width: 1860px)
+    margin-bottom: 3vh
+    font-size: 2.5rem
+.main_subtitle_text
+  font-family: $fontF
+  font-weight: 400
+  font-size: 2.4rem
+  line-height: 3rem
+  color: $white
+.bg_text
+  width: 15vw
+  position: absolute
+  z-index: 10
+  right: 9vw
+  top: 25vh
+  font-size: 2.4rem
+  line-height: 3rem
+  color: $white
+  font-family: $fontF
+  font-style: italic
+  font-weight: 400
+
+.main_section_video
+  margin-bottom: 4rem
+  &:last-child
+    margin-bottom: 0
+  &_wrapper
+    width: 14vw
+    padding-top: 13vh
+    overflow: hidden
+    margin-right: 3rem
+    position: relative
+    &>img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: auto
+  &>a
+    width: 60%
+    font-size: 1.8rem
+    font-weight: 400
+    line-height: 2.2rem
+    font-family: $fontF
+    color: $white
+
+.main_wrapper_photo
+  width: 50%
+  height: 100vh
+  position: absolute
+  right: 5rem
+  top: 13vh
+  &_border
+    height: 90vh
+    position: absolute
+    bottom: 4%
+    right: 8%
+    opacity: 0.5
+    z-index: 5
+    &:after
+      content: ''
+      width: 45%
+      height: 45%
+      position: absolute
+      top: 0
+      right: 25vh
+      border-radius: 50%
+      box-shadow: 0 0 80px 0 #ffffff
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.55) 25%, rgba(255,255,255,0.0) 255%)
+    &>img
+      width: auto
+      height: 100%
+  &_coach
+    height: 90vh
+    position: absolute
+    bottom: 0.4%
+    right: 26%
+    z-index: 7
+    overflow: hidden
+    opacity: 1
+    &>img
+      width: auto
+      height: 100%
+
+.bnt_header
+  height: 7rem
+  position: absolute
+  bottom: 30%
+  right: 28vh
+  z-index: 8
+  width: 30vw
+  font-size: 3rem
+  font-family: $fontF
+  font-weight: 400
+  color: $white
+  line-height: 3.6rem
+
+  &:hover
+    border: 2px solid #FFFFFF
+
+
+
+
+
+

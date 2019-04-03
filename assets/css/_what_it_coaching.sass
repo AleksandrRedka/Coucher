@@ -1,0 +1,98 @@
+.what_it_coaching
+  position: relative
+  padding: 0 13rem
+  padding-top: 35rem
+  padding-bottom: 17rem
+  overflow: hidden
+.bg_title
+  color: #535353
+  opacity: 0.1
+  font-size: 50rem
+  line-height: 50rem
+  position: absolute
+  top: 5%
+  left: 0
+  font-family: $fontF
+  font-weight: 700
+  white-space: nowrap
+.what_it_coaching
+  &_subtitle
+    font-size: 2.4rem
+    line-height: 3rem
+    font-family: $fontF
+    font-weight: 400
+    margin-bottom: 35rem
+    &:after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 3.5rem
+      background-color: $red
+      top: 0
+      left: 0
+  &_tasks
+    position: relative
+    width: 100%
+    height: auto
+    padding: 16vh 3vw
+    overflow: hidden
+    z-index: 2
+    box-shadow: 40px 40px 30px 0 rgba(0,0,0,0.12)
+    &:before
+      position: absolute
+      z-index: 3
+      content: ''
+      width: 150%
+      height: 35vw
+      background-color: #F1F1F1
+      //opacity: 0.1
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%) rotate(40deg)
+    &:after
+      content: ''
+      position: absolute
+      z-index: 2
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: white
+    &_title
+      position: relative
+      z-index: 3
+    &_list
+      padding-top: 6vh
+      &>li
+        position: relative
+        z-index: 4
+        padding-left: 4rem
+        margin-bottom: 2vh
+        &:after
+          content: ''
+          width: 2.5rem
+          height: 2rem
+          position: absolute
+          top: 55%
+          left: 0%
+          background-color: #BBBBBB
+          transform: translate(-50%,-50%) rotate(27deg) skewX(-35deg)
+        &>p
+          font-size: 2.4rem
+          line-height: 3rem
+          font-family: $fontF
+          font-weight: 400
+
+  &_img
+    position: absolute
+    width: 50%
+    height: auto
+    top: 60rem
+    right: 0
+    z-index: 1
+    &>img
+      width: 100%
+
+
+
+

@@ -1,0 +1,47 @@
+.about_me
+  padding: 0 13rem
+  padding-top: 15rem
+  padding-bottom: 10rem
+  position: relative
+  &_title
+    margin-bottom: 3rem
+  &_photo
+    position: relative
+    z-index: 2
+    width: 100%
+    overflow: hidden
+    padding-top: 140%
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1)
+    &>img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: auto
+  &_name
+    font-size: 3.6rem
+    font-family: $fontF
+    font-weight: 700
+    margin-top: 2rem
+    margin-bottom: 3rem
+  &_text
+    font-size: 2rem
+    line-height: 3rem
+    font-family: $fontF
+    font-weight: 300
+  &_title_block
+    margin-top: 3rem
+    margin-bottom: 2rem
+    font-size: 2rem
+    font-family: $fontF
+    font-weight: 700
+  &_bg
+    height: 50vh
+    position: absolute
+    z-index: 1
+    top: 45%
+    right: 27%
+    transform: rotate(-30deg)
+    &>img
+      width: auto
+      height: 100%

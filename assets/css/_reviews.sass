@@ -1,0 +1,54 @@
+.reviews
+  padding-left: 13rem
+  padding-top: 28rem
+  position: relative
+  overflow: hidden
+  padding-bottom: 14rem
+  &_title
+    margin-bottom: 8rem
+  &_slider
+    width: 110vw
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &_item
+      background-color: $white
+      position: relative
+      z-index: 2
+      width: 40vw
+      display: flex
+      flex-direction: row
+      margin-right: 3rem
+      box-shadow: 10px 10px 30px 0 rgba(0,0,0,0.1)
+      &_img
+        width: 32%
+        height: 100%
+        overflow: hidden
+        position: relative
+        &>img
+          position: absolute
+          top: 0
+          left: 0
+          background-color: $white
+          height: 100%
+          width: auto
+    &_info
+      padding: 3rem
+      width: 68%
+      &_name
+        font-family: $fontF
+        font-weight: 700
+        font-size: 3rem
+        line-height: 3.6rem
+        margin-bottom: 0.5rem
+      &_subname
+        font-size: 1.4rem
+        line-height: 1.8rem
+        font-family: $fontF
+        font-weight: 400
+        margin-bottom: 2.2rem
+      &_text
+        font-family: $fontF
+        font-size: 1.8rem
+        line-height: 2.4rem
+        font-weight: 400

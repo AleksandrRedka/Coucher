@@ -1,0 +1,55 @@
+.wrapper_motivation
+  width: 100vw
+  overflow: hidden
+  position: relative
+  z-index: 1
+  &:after
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 2
+    top: 0
+    left: 0
+    background-color: #BBBBBB
+    opacity: 0.8
+  &>img
+    position: absolute
+    top: -50%
+    left: 0
+    width: 100%
+    height: auto
+.motivation
+  position: relative
+  z-index: 3
+  padding: 10rem 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &_title
+    margin: auto
+    color: $white
+    margin-bottom: 5rem
+  &_subtitle
+    margin: auto
+    width: 40%
+    color: $white
+    font-family:  $fontF
+    font-size: 3.6rem
+    line-height: 4.4rem
+    font-weight: 700
+    text-align: center
+    margin-bottom: 5%
+  &_button
+    margin: auto
+    width: 30%
+
+
+
+
+
+
+
+
+
+

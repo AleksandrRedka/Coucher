@@ -1,0 +1,120 @@
+.benefit_coaching
+  position: relative
+  padding: 0 13rem
+  padding-top: 17rem
+  padding-bottom: 40rem
+  overflow: hidden
+  &_title
+    text-align: center
+    margin-bottom: 50rem
+  &_img_wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+  &_img
+    position: relative
+    width: 25%
+    border-radius: 50px
+    &>img
+      width: 100%
+      height: auto
+      border-radius: 50px
+    &_item
+      width: 100%
+      position: absolute
+      //transform: translate(-50%,-50%)
+      top: 0
+      right: 0
+      font-family: $fontF
+      font-weight: 400
+      font-size: 2.4rem
+      line-height: 3rem
+      text-align: center
+      &:nth-child(2)
+        top: -80%
+        right: 0%
+        &:before
+          content: '01'
+          font-family: $fontF
+          font-weight: 700
+          font-size: 15rem
+          line-height: 18rem
+          color: #BBBBBB
+          opacity: 0.2
+          position: absolute
+          top: -200%
+          left: 30%
+        &:after
+          content: ""
+          width: 2px
+          height: 50px
+          background-color: $red
+          bottom: -15rem
+          left: 50%
+          position: absolute
+      &:nth-child(3)
+        top: 50%
+        right: -150%
+        &:before
+          content: '02'
+          font-family: $fontF
+          font-weight: 700
+          font-size: 15rem
+          line-height: 18rem
+          color: #BBBBBB
+          opacity: 0.2
+          position: absolute
+          top: -200%
+          left: 25%
+        &:after
+          content: ""
+          width: 50px
+          height: 2px
+          background-color: $red
+          top: 50%
+          left: -15rem
+          position: absolute
+      &:nth-child(4)
+        top: auto
+        bottom: -80%
+        &:before
+          content: '03'
+          font-family: $fontF
+          font-weight: 700
+          font-size: 15rem
+          line-height: 18rem
+          color: #BBBBBB
+          opacity: 0.2
+          position: absolute
+          top: -200%
+          left: 25%
+        &:after
+          content: ""
+          width: 2px
+          height: 50px
+          background-color: $red
+          top: -15rem
+          left: 50%
+          position: absolute
+      &:nth-child(5)
+        top: 50%
+        right: 150%
+        &:before
+          content: '04'
+          font-family: $fontF
+          font-weight: 700
+          font-size: 15rem
+          line-height: 18rem
+          color: #BBBBBB
+          opacity: 0.2
+          position: absolute
+          top: -200%
+          left: 25%
+        &:after
+          content: ""
+          width: 50px
+          height: 2px
+          background-color: $red
+          top: 50%
+          right: -15rem
+          position: absolute
