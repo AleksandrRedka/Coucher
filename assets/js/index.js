@@ -85,20 +85,53 @@ $(document).ready(function () {
         arrows: true,
         infinite: true,
         prevArrow: '<button class="slick-review slick-prev slick-reviews-prev "><img src="assets/img/svg/Group%2049.svg" alt=""></button>',
-        nextArrow: '<button class="slick-review slick-next slick-reviews-next "><img src="assets/img/svg/Group%2050.svg" alt=""></button>'
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 1,
-        //             infinite: true,
-        //             dots: false
-        //         }
-        //     },
-        //
+        nextArrow: '<button class="slick-review slick-next slick-reviews-next "><img src="assets/img/svg/Group%2050.svg" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            }
 
-        // ]
+
+        ]
     });
 });
+(function () {
+    $('.reviews_slider').on('init', function(event, slick){
+        var height = 0;
+        $('.reviews_slider_info').each(function(){
+            var new_height = $(this).css('height');
+            new_height = parseInt(new_height, 10);
+            if(new_height > height){height = new_height};
+        });
+        $('.reviews_slider_info').css('height', height);
+    });
+
+})();
+(function () {
+    $('.read_more-js').click(
+        function () {
+            $(this).siblings('.about_me_wrapper_text_view').toggleClass('about_me_text_open');
+            var textLink = $('.read_more-js').text();
+           if(textLink==='Читать...'){
+               $('.read_more-js').text('Cкрыть');
+               return
+           };
+           $('.read_more-js').text('Читать...')
+    })
+})();
 

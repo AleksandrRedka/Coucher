@@ -7,13 +7,23 @@
   @media screen and (max-width: $tablet)
     padding-left: 13.33rem
     padding-top: 22rem
+    @media screen and (max-width: $mobile)
+      padding-left: 0
+      padding-right: 0
+      padding-top: 23rem
   &_title
     margin-bottom: 8rem
+    @media screen and (max-width: $tablet)
+      text-align: center
   &_slider
     width: 110vw
     height: auto
     @media screen and (max-width: $tablet)
       width: 230vw
+      @media screen and (max-width: $mobile)
+        width: 100%
+        padding: 0  3rem
+
     &_item
       background-color: $white
       position: relative
@@ -25,8 +35,15 @@
       flex-direction: row
       margin-right: 3rem
       box-shadow: 10px 10px 30px 0 rgba(0,0,0,0.1)
-      @media screen and (max-width: $tablet)
-        width: 65%
+      margin-bottom: 5rem
+      @media screen and (max-width: 1030px)
+        width: 100%
+        @media screen and (max-width: 1023px)
+          width: 65%
+          left: 0
+          @media screen and (max-width: $mobile)
+            flex-direction: column
+            width: 100%
 
       &_img
         width: 32%
@@ -36,19 +53,32 @@
         @media screen and (max-width: $tablet)
           width: 40%
           padding-top: 80%
+          @media screen and (max-width: $mobile)
+            width: 100%
+
         &>img
           position: absolute
-          top: 0
-          left: 0
+          top: 50%
+          transform: translate(-50%,-50%)
+          left: 50%
           background-color: $white
-          height: auto
-          width: 100%
+          height: 100%
+          width: auto
+          @media screen and (max-width: $mobile)
+            width: 100%
+            height: auto
+
+
+
     &_info
       padding: 3rem
       width: 68%
       @media screen and (max-width: $tablet)
         padding: 4.33rem
         width: 60%
+        @media screen and (max-width: $mobile)
+          width: 100%
+          padding-bottom: 8rem
       &_name
         font-family: $fontF
         font-weight: 700
@@ -59,6 +89,10 @@
           font-size: 4.33rem
           line-height: 5.33rem
           margin-bottom: 1rem
+          @media screen and (max-width: $mobile)
+            font-size: 3.33rem
+            line-height: 4rem
+
       &_subname
         font-size: 1.4rem
         line-height: 1.8rem
@@ -76,6 +110,92 @@
         @media screen and (max-width: $tablet)
           font-size: 2.66rem
           line-height: 3.33rem
+          @media screen and (max-width: $mobile)
+            max-height: 13rem
+            overflow: hidden
+            width: 80%
 .wrapper_reviews_slider
   padding: 0 15px
   height: 100%
+  @media screen and (max-width: $mobile)
+    padding: 0
+    width: 100%
+.slick-review
+  background-color: transparent
+  border: none
+  position: absolute
+  transform: translate(-50%,-50%)
+  top: auto
+  left: 33%
+  bottom: -5%
+  width: 4rem
+  height: 1.5rem
+  outline: none
+  @media screen and (max-width: 1030px)
+    left: 13%
+    @media screen and (max-width: 1023px)
+      width: 6rem
+      height: 2rem
+      left: 10%
+      @media screen and (max-width: $mobile)
+        width: 10rem
+        bottom: -4.5%
+        left: 25%
+  &>img
+    width: 100%
+.slick-reviews-next
+  left: 47%
+  @media screen and (max-width: 1030px)
+    left: 23%
+    @media screen and (max-width: 1023px)
+      left: 20%
+      @media screen and (max-width: $mobile)
+        width: 10rem
+
+        left: 75%
+
+.slick-dots
+  display: flex
+  position: absolute
+  transform: translate(-50%,-50%)
+  bottom: -5%
+  left: 39.8%
+  @media screen and (max-width: 1030px)
+    left: 18%
+    @media screen and (max-width: 1023px)
+      left: 15%
+      bottom: -4.5%
+      @media screen and (max-width: $mobile)
+        left: 50%
+
+  &>li
+    display: inline-block
+    margin-right: 1.6rem
+    width: 1.5rem
+    height: 1.5rem
+    border: 3px solid #BBBBBB
+    background-color: #fff
+    border-radius: 50%
+    cursor: pointer
+    transition: all .3s ease
+    &:last-child
+      margin-right: 0
+    &>button
+      border: none
+      padding: 0
+      width: 100%
+      height: 100%
+      background-color: transparent
+      font-size: 0
+      border-radius: 50%
+      outline: none
+.slick-active>li
+  background-color: #bbb
+.slider_read_more
+  position: absolute
+  bottom: 4.33rem
+  left: 4.33rem
+  font-size: 2.33rem
+  line-height: 3rem
+  font-family: $fontF
+  text-decoration: underline
