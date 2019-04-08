@@ -4,6 +4,9 @@
   position: relative
   overflow: hidden
   padding-bottom: 14rem
+  @media screen and (max-width: $tablet)
+    padding-left: 13.33rem
+    padding-top: 22rem
   &_title
     margin-bottom: 8rem
   &_slider
@@ -11,6 +14,8 @@
     display: flex
     flex-direction: row
     justify-content: space-between
+    @media screen and (max-width: $tablet)
+      width: 230vw
     &_item
       background-color: $white
       position: relative
@@ -20,11 +25,17 @@
       flex-direction: row
       margin-right: 3rem
       box-shadow: 10px 10px 30px 0 rgba(0,0,0,0.1)
+      @media screen and (max-width: $tablet)
+        width: 65%
+
       &_img
         width: 32%
         height: 100%
         overflow: hidden
         position: relative
+        @media screen and (max-width: $tablet)
+          width: 40%
+          padding-top: 80%
         &>img
           position: absolute
           top: 0
@@ -35,20 +46,33 @@
     &_info
       padding: 3rem
       width: 68%
+      @media screen and (max-width: $tablet)
+        padding: 4.33rem
+        width: 60%
       &_name
         font-family: $fontF
         font-weight: 700
         font-size: 3rem
         line-height: 3.6rem
         margin-bottom: 0.5rem
+        @media screen and (max-width: $tablet)
+          font-size: 4.33rem
+          line-height: 5.33rem
+          margin-bottom: 1rem
       &_subname
         font-size: 1.4rem
         line-height: 1.8rem
         font-family: $fontF
         font-weight: 400
         margin-bottom: 2.2rem
+        @media screen and (max-width: $tablet)
+          font-size: 2rem
+          line-height: 2.33rem
       &_text
         font-family: $fontF
         font-size: 1.8rem
         line-height: 2.4rem
         font-weight: 400
+        @media screen and (max-width: $tablet)
+          font-size: 2.66rem
+          line-height: 3.33rem

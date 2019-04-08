@@ -1,6 +1,6 @@
 .section_statistics
   position: relative
-  width: 100vw
+  width: 100%
   height: 30rem
   overflow: hidden
   display: flex
@@ -8,6 +8,10 @@
   justify-content: space-around
   align-items: center
   padding: 8rem 18rem
+  @media screen and (max-width: $mobile)
+    height: 90vh
+    padding: 9rem 6rem
+    flex-direction: column
   &:before
     content: ''
     position: absolute
@@ -25,38 +29,86 @@
     width: 100%
     height: auto
     z-index: 1
+    @media screen and (max-width: $tablet)
+      top: -100%
+    @media screen and (max-width: $mobile)
+      top: 0
+      left: -75%
+      width: auto
+      height: 100%
+
   &_bg_elem_one
     position: absolute
     z-index: 2
-    top: -65%
-    left: 4%
-    height: 60vh
-    transform: rotate(0deg)
+    top: 50%
+    left: 22%
+    height: 80vh
+    transform: translate(-50%,-50%)
     opacity: 0.5
+    @media screen and (max-width: $tablet)
+      height: 200%
+      transform: translate(-50%,-50%)
+      left: 22%
+      @media screen and (max-width: $mobile)
+        left: 50%
+        top: 25%
+        height: auto
+        width: 65vh
+        transform: translate(-50%,-50%) rotate(-65deg)
     &>img
       width: 100%
       height: 100%
+      @media screen and (max-width: $tablet)
+        width: auto
+        height: 100%
   &_bg_elem_two
     position: absolute
     z-index: 2
-    top: -45%
-    left: 31%
-    height: 60vh
-    transform: rotate(-55deg)
+    top: 50%
+    left: 49%
+    height: 80vh
+    transform: translate(-50%,-50%) rotate(-55deg)
     opacity: 0.5
+    @media screen and (max-width: $tablet)
+      height: 200%
+      transform: translate(-50%,-50%) rotate(-55deg)
+      top: 50%
+      left: 50%
+      @media screen and (max-width: $mobile)
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%) rotate(-45deg)
+        height: auto
+        width: 65vh
+
     &>img
       width: 100%
       height: 100%
+      @media screen and (max-width: $tablet)
+        width: auto
+        height: 100%
   &_bg_elem_three
     position: absolute
     z-index: 2
-    right: 8%
-    top: -65%
-    height: 60vh
-    transform: rotate(25deg)
+    left: 75%
+    top: 50%
+    height: 80vh
+    transform: translate(-50%,-50%) rotate(25deg)
     opacity: 0.5
+    @media screen and (max-width: $tablet)
+      transform: translate(-50%,-50%) rotate(25deg)
+      top: 50%
+      left: 75%
+      height: 200%
+      @media screen and (max-width: $mobile)
+        left: 50%
+        top: 75%
+        height: auto
+        width: 65vh
+        transform: translate(-50%,-50%) rotate(25deg)
+
     &>img
-      width: 100%
+      width: auto
       height: 100%
 
   &_item
@@ -67,6 +119,13 @@
     display: flex
     flex-direction: column
     align-items: center
+    @media screen and (max-width: $mobile)
+      width: 60%
+      @media screen and (max-width: $mobile)
+        width: 80%
+        &:nth-child(-n+2)
+          margin-bottom: 8rem
+
     &>h4
       font-size: 7.2rem
       line-height: 8.8rem
@@ -75,6 +134,8 @@
       font-weight: 700
       text-align: center
       margin-bottom: 1.5rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 4rem
     &>p
       width: 60%
       font-family: $fontF
@@ -82,3 +143,9 @@
       font-size: 2rem
       color: #D4D4D4
       text-align: center
+      @media screen and (max-width: $tablet)
+        width: 70%
+        @media screen and (max-width: $mobile)
+          width: 80%
+          font-size: 2.4rem
+          line-height: 3rem

@@ -5,21 +5,49 @@
   background-color: #F1F1F1
   box-shadow: 0 0 50px 0 rgba(0,0,0,0.1)
   overflow: hidden
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    padding-top: 5rem
+    padding-bottom: 5rem
+    @media screen and (max-width: $mobile)
+      padding: 13.5rem 6rem 11rem 6rem
   &_title
     padding-top: 7rem
+    @media screen and (max-width: $tablet)
+      padding-top: 0
+      text-align: center
+      margin-bottom: 7rem
   &_item
     margin-bottom: 7rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 8.33rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 9rem
     &_title
       font-size: 3.6rem
       line-height: 4.4rem
       font-family: $fontF
       font-weight: 700
       margin-bottom: 3rem
+      @media screen and (max-width: $tablet)
+        font-size: 3rem
+        line-height: 2.2rem
+        margin-bottom: 2rem
+        @media screen and (max-width: $mobile)
+          font-size: 3.33rem
+          line-height: 4rem
+          margin-bottom: 2.33rem
     &_text
       position: relative
       font-family: $fontF
       font-size: 2.4rem
-      left: 3rem
+      line-height: 3rem
+      @media screen and (max-width: $tablet)
+        font-size: 2.66rem
+        line-height: 3.33rem
+        @media screen and (max-width: $mobile)
+          font-size: 2.8rem
+          line-height: 3.5rem
       &:before
         content: ''
         position: absolute
@@ -28,6 +56,9 @@
         background-color: $red
         top: 0
         left: -3%
+        @media screen and (max-width: $mobile)
+          left: -8%
+          height: 7.5rem
 
   &_bg_first
     position: absolute
@@ -35,6 +66,20 @@
     left: 3%
     width: 75vh
     transform: rotate(20deg)
+    pointer-events: none
+    @media screen and (max-width: 1030px)
+      width: 40%
+      left: 10%
+      top: 5%
+      @media screen and (max-width: 1023px)
+        width: 60%
+        left: 25%
+        top: 0
+        @media screen and (max-width: $mobile)
+          width: 160%
+          left: 100%
+          top: 30%
+          transform: translate(-50%,-50%) rotate(20deg)
     &>img
       width: 100%
       height: auto
@@ -43,7 +88,34 @@
     top: 40%
     left: 10%
     width: 55vh
+    pointer-events: none
+    @media screen and (max-width: 1030px)
+      width: 35%
+      top: 38%
+      @media screen and (max-width: 1023px)
+        width: 45%
+        left: 30%
+        top: 40%
+        @media screen and (max-width: $mobile)
+          width: 140%
+          transform: translate(-50%,-50%)
+          top: 75%
+          left: 75%
     &>img
       width: 100%
       height: auto
-
+  &_btn
+    width: 50%
+    @media screen and (max-width: 1030px)
+      width: 75%
+      margin: auto
+      @media screen and (max-width: 1023px)
+        width: 50%
+        font-size: 3rem
+        line-height: 4rem
+        white-space: nowrap
+        @media screen and (max-width: $mobile)
+          width: 100%
+          padding: 0
+        //@media screen and (max-width: 1030px)
+      //  width: 75%

@@ -4,6 +4,14 @@
   padding-top: 30rem
   padding-bottom: 17rem
   overflow: hidden
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    padding-top: 25rem
+    padding-bottom: 10rem
+    @media screen and (max-width: $mobile)
+      padding: 23rem 6rem 0 6rem
+      overflow: visible
+
 .bg_title
   color: #535353
   opacity: 0.1
@@ -15,6 +23,9 @@
   font-family: $fontF
   font-weight: 700
   white-space: nowrap
+  @media screen and (max-width: $tablet)
+    font-size: 35rem
+    line-height: 40rem
 .what_it_coaching
   &_subtitle
     font-size: 2.4rem
@@ -22,6 +33,12 @@
     font-family: $fontF
     font-weight: 400
     margin-bottom: 45rem
+    @media screen and (max-width: $tablet)
+      font-size: 2.66rem
+      line-height: 4rem
+      margin-bottom: 40rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 105%
     &:after
       content: ''
       position: absolute
@@ -38,6 +55,15 @@
     overflow: hidden
     z-index: 2
     box-shadow: 40px 40px 30px 0 rgba(0,0,0,0.12)
+    @media screen and (max-width: $tablet)
+      margin-left: -15.5rem
+      padding-left: 13.33rem
+      padding-top: 3rem
+      padding-bottom: 6.5rem
+      @media screen and (max-width: $mobile)
+        margin-left: calc(-6rem - 15px)
+        padding-left: 6rem
+        width: 150%
     &:before
       position: absolute
       z-index: 3
@@ -49,6 +75,14 @@
       top: 50%
       left: 50%
       transform: translate(-50%,-50%) rotate(40deg)
+      @media screen and (max-width: $tablet)
+        width: 200%
+        height: 50vw
+        @media screen and (max-width: $mobile)
+          width: 250%
+          height: 85%
+          top: 60%
+
     &:after
       content: ''
       position: absolute
@@ -58,16 +92,31 @@
       top: 0
       left: 0
       background-color: white
+      @media screen and (max-width: $tablet)
+        width: 50%
+        @media screen and (max-width: $mobile)
+          width: 40%
     &_title
       position: relative
       z-index: 3
+      @media screen and (max-width: $mobile)
+        margin-bottom: 0
     &_list
       padding-top: 6vh
+      @media screen and (max-width: 1280px)
+        padding-top: 4.5rem
       &>li
         position: relative
         z-index: 4
         padding-left: 4rem
         margin-bottom: 2vh
+        @media screen and (max-width: 1280px)
+          width: 75%
+          margin-bottom: 2.5rem
+          @media screen and (max-width: $mobile)
+            padding-left: 0
+            @media screen and (min-width: 411px)
+              width: 70%
         &:after
           content: ''
           width: 2.5rem
@@ -77,11 +126,22 @@
           left: 0%
           background-color: #BBBBBB
           transform: translate(-50%,-50%) rotate(27deg) skewX(-35deg)
+          border-radius: 3px
+          @media screen and (max-width: $mobile)
+            left: -10%
+            width: 2rem
+            height: 1.5rem
         &>p
           font-size: 2.4rem
           line-height: 3rem
           font-family: $fontF
           font-weight: 400
+          @media screen and (max-width: 1280px)
+            font-size: 2.66rem
+            left: 3rem
+
+
+
 
   &_img
     position: absolute
@@ -90,6 +150,14 @@
     top: 60rem
     right: 0
     z-index: 1
+    @media screen and (max-width: $tablet)
+      width: 55%
+      top: 70rem
+      right: 13.33rem
+      @media screen and (max-width: $mobile)
+        width: 100%
+        right: 0
+        top: 80rem
     &>img
       width: 100%
 

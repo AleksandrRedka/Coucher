@@ -3,36 +3,86 @@
   padding: 0 13rem
   padding-bottom: 3rem
   justify-content: space-between
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    padding-bottom: 5rem
+    flex-direction: column-reverse
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      padding-bottom: 5rem
+  &_info
+    width: 50%
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: $tablet)
+      width: 100%
+      flex-direction: row
+      margin-bottom: 5.5rem
+      @media screen and (max-width: $mobile)
+        flex-direction: column
   &_company_create
+    display: flex
+    align-items: flex-end
     font-family: $fontF
     font-weight: 300
     line-height: 2.4rem
     font-size: 2rem
-    display: flex
-    align-items: flex-end
+    @media screen and (max-width: $tablet)
+      line-height: 4rem
+      font-size: 3.33rem
+      @media screen and (max-width: $mobile)
+        font-size: 2.33rem
+        line-height: 3rem
+
   &_contacts
-    display: flex
-    flex-direction: column
-    justify-content: space-between
     &_phone
       font-family: $fontF
       font-weight: 700
       line-height: 3.7rem
       font-size: 3rem
       margin-bottom: 1.5rem
+      @media screen and (max-width: $tablet)
+        font-size: 5rem
+        line-height: 6rem
+        margin-bottom: 3.33rem
+        @media screen and (max-width: $mobile)
+          margin-bottom: 2.66rem
+          font-size: 3.33rem
+          line-height: 4rem
     &_email
       font-family: $fontF
       font-weight: 300
       font-size: 2.4rem
       line-height: 3rem
+      @media screen and (max-width: $tablet)
+        line-height: 4rem
+        font-size: 3.33rem
+        margin-bottom: 5.5rem
+        @media screen and (max-width: $mobile)
+          font-size: 3rem
+          line-height: 3.66rem
+
 
   &_icons
     display: flex
     justify-content: space-between
+    @media screen and (max-width: $tablet)
+      align-items: flex-end
+      @media screen and (max-width: $mobile)
+        padding-top: 10rem
+        padding-bottom: 9rem
+
     &_item
       width: 5rem
       height: 5rem
       margin-right: 1.5rem
+      @media screen and (max-width: $tablet)
+        width: 6rem
+        height: 6rem
+        @media screen and (max-width: $mobile)
+          width: 9rem
+          height: 9rem
+
       &>img
         width: 100%
         height: auto

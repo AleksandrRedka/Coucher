@@ -4,119 +4,307 @@
   padding-top: 17rem
   padding-bottom: 40rem
   overflow: hidden
+  @media screen and (max-width: 1280px)
+    padding: 0 13.33rem
+    padding-top: 13rem
+    padding-bottom: 30rem
+    @media screen and (max-width: $mobile)
+      padding-left: 6rem
+      padding-right: 6rem
+      padding-bottom: 13rem
   &_bg_title
     top: -7%
+    @media screen and (max-width: $tablet)
+      top: -5%
   &_title
     text-align: center
-    margin-bottom: 40rem
+    margin-bottom: 45rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 40rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 22rem
   &_img_wrapper
     display: flex
     justify-content: center
     align-items: center
+    position: relative
+    @media screen and (max-width: $mobile)
+      justify-content: flex-start
+      flex-direction: column
   &_img
     position: relative
     width: 25%
     border-radius: 50px
+    padding-top: 18%
+    overflow: hidden
+    @media screen and (max-width: 1030px)
+      padding-top: 30%
+      width: 40%
+      @media screen and (max-width: 1023px)
+        padding-top: 30vh
+        @media screen and (max-width: $mobile)
+          display: none
+
     &>img
       width: 100%
       height: auto
-      border-radius: 50px
-    &_item
-      width: 100%
       position: absolute
-      //transform: translate(-50%,-50%)
+      left: 0
       top: 0
-      right: 0
-      font-family: $fontF
-      font-weight: 400
-      font-size: 2.4rem
-      line-height: 3rem
-      text-align: center
-      &:nth-child(2)
-        top: -60%
-        right: 0%
-        &:before
-          content: '01'
-          font-family: $fontF
-          font-weight: 700
-          font-size: 15rem
-          line-height: 18rem
-          color: #BBBBBB
-          opacity: 0.2
-          position: absolute
-          top: -200%
-          left: 27%
-        &:after
-          content: ""
-          width: 2px
-          height: 50px
-          background-color: $red
-          bottom: -9rem
-          left: 50%
-          position: absolute
-      &:nth-child(3)
+      @media screen and (max-width: 1030px)
+        width: 100%
+        height: auto
+        left: 50%
         top: 50%
-        right: -150%
-        &:before
-          content: '02'
-          font-family: $fontF
-          font-weight: 700
-          font-size: 15rem
-          line-height: 18rem
-          color: #BBBBBB
-          opacity: 0.2
-          position: absolute
-          top: -200%
-          left: 25%
-        &:after
-          content: ""
-          width: 50px
-          height: 2px
-          background-color: $red
-          top: 50%
-          left: -15rem
-          position: absolute
-      &:nth-child(4)
-        top: auto
-        bottom: -80%
-        &:before
-          content: '03'
-          font-family: $fontF
-          font-weight: 700
-          font-size: 15rem
-          line-height: 18rem
-          color: #BBBBBB
-          opacity: 0.2
-          position: absolute
-          top: -200%
-          left: 27%
-        &:after
-          content: ""
-          width: 2px
-          height: 50px
-          background-color: $red
-          top: -15rem
+        transform: translate(-50%,-50%)
+        @media screen and (max-width: 1023px)
+          width: auto
+          height: 100%
+          left: -65%
+          top: 0
+          transform: none
+
+.benefit_coaching_item
+    width: 25%
+    position: absolute
+    //transform: translate(-50%,-50%)
+    top: 0
+    right: 25%
+    font-family: $fontF
+    font-weight: 400
+    font-size: 2.4rem
+    line-height: 3rem
+    text-align: center
+    transform: translate(-50%,-50%)
+    @media screen and (max-width: $tablet)
+      height: 10rem
+
+
+
+    &:nth-child(2)
+      top: -60%
+      @media screen and (max-width: $tablet)
+        top: -10rem
+        @media screen and (max-width: $mobile)
+          position: relative
+          transform: none
+          width: 44%
+          font-size: 2.66rem
+          line-height: 3.33rem
+          margin-bottom: 14rem
+          top: auto
+          right: auto
+          left: auto
+          bottom: auto
+      &:before
+        content: '01'
+        font-family: $fontF
+        font-weight: 700
+        font-size: 15rem
+        line-height: 18rem
+        color: #BBBBBB
+        opacity: 0.2
+        position: absolute
+        top: -200%
+        left: 25%
+        @media screen and (max-width: $tablet)
+          transform: translate(-50%,-50%)
+          top: -20%
           left: 50%
-          position: absolute
-      &:nth-child(5)
+          @media screen and (max-width: $mobile)
+            top: 50%
+            font-size: 18rem
+            line-height: 22rem
+
+
+      &:after
+        content: ""
+        width: 2px
+        height: 50px
+        background-color: $red
+        bottom: -9rem
+        left: 50%
+        position: absolute
+        @media screen and (max-width: $tablet)
+          height: 25px
+          transform: rotate(90deg)
+          bottom: -5rem
+          @media screen and (max-width: $mobile)
+            top: 50%
+            left: -40%
+            right: auto
+            bottom: auto
+            height: 2px
+            width: 8vw
+            transform: translate(-50%,-50%)
+    &:nth-child(3)
+      top: 50%
+      right: -15%
+      @media screen and (max-width: $tablet)
+        right: -15rem
+        @media screen and (max-width: $mobile)
+          position: relative
+          transform: none
+          width: 44%
+          font-size: 2.66rem
+          line-height: 3.33rem
+          margin-bottom: 14rem
+          top: auto
+          right: auto
+          left: auto
+          bottom: auto
+      &:before
+        content: '02'
+        font-family: $fontF
+        font-weight: 700
+        font-size: 15rem
+        line-height: 18rem
+        color: #BBBBBB
+        opacity: 0.2
+        position: absolute
+        top: -200%
+        left: 25%
+        @media screen and (max-width: $tablet)
+          transform: translate(-50%,-50%)
+          top: -20%
+          left: 50%
+          @media screen and (max-width: $mobile)
+            top: 50%
+            font-size: 18rem
+            line-height: 22rem
+      &:after
+        content: ""
+        width: 50px
+        height: 2px
+        background-color: $red
         top: 50%
-        right: 150%
-        &:before
-          content: '04'
-          font-family: $fontF
-          font-weight: 700
-          font-size: 15rem
-          line-height: 18rem
-          color: #BBBBBB
-          opacity: 0.2
-          position: absolute
-          top: -200%
-          left: 25%
-        &:after
-          content: ""
-          width: 50px
-          height: 2px
-          background-color: $red
-          top: 50%
-          right: -15rem
-          position: absolute
+        left: -15rem
+        position: absolute
+        @media screen and (max-width: $tablet)
+          width: 25px
+          transform: rotate(90deg)
+          left: -5rem
+          @media screen and (max-width: $mobile)
+            top: 50%
+            left: -40%
+            right: auto
+            bottom: auto
+            height: 2px
+            width: 8vw
+            transform: translate(-50%,-50%)
+    &:nth-child(4)
+      top: auto
+      bottom: -110%
+      @media screen and (max-width: $tablet)
+        bottom: -28rem
+        @media screen and (max-width: $mobile)
+          position: relative
+          transform: none
+          width: 44%
+          font-size: 2.66rem
+          line-height: 3.33rem
+          margin-bottom: 14rem
+          top: auto
+          right: auto
+          left: auto
+          bottom: auto
+      &:before
+        content: '03'
+        font-family: $fontF
+        font-weight: 700
+        font-size: 15rem
+        line-height: 18rem
+        color: #BBBBBB
+        opacity: 0.2
+        position: absolute
+        top: -200%
+        left: 25%
+        @media screen and (max-width: $tablet)
+          transform: translate(-50%,-50%)
+          top: -20%
+          left: 50%
+          @media screen and (max-width: $mobile)
+            top: 50%
+            font-size: 18rem
+            line-height: 22rem
+      &:after
+        content: ""
+        width: 2px
+        height: 50px
+        background-color: $red
+        top: -15rem
+        left: 50%
+        position: absolute
+        @media screen and (max-width: $tablet)
+          height: 25px
+          transform: rotate(90deg)
+          top: -12rem
+          @media screen and (max-width: $mobile)
+            top: 50%
+            left: -40%
+            right: auto
+            bottom: auto
+            height: 2px
+            width: 8vw
+            transform: translate(-50%,-50%)
+    &:nth-child(5)
+      top: 50%
+      right: 62%
+      //@media screen and (max-width: 1030px)
+      //  left: 14.5%
+      @media screen and (max-width: 1030px)
+        left: 14.5%
+        @media screen and (max-width: 1023px)
+          left: 11%
+          right: auto
+          @media screen and (max-width: $mobile)
+            position: relative
+            transform: none
+            width: 44%
+            font-size: 2.66rem
+            line-height: 3.33rem
+            margin-bottom: 0
+            top: auto
+            right: auto
+            left: auto
+            bottom: auto
+
+      &:before
+        content: '04'
+        font-family: $fontF
+        font-weight: 700
+        font-size: 15rem
+        line-height: 18rem
+        color: #BBBBBB
+        opacity: 0.2
+        position: absolute
+        top: -200%
+        left: 25%
+        @media screen and (max-width: $tablet)
+          transform: translate(-50%,-50%)
+          top: -20%
+          left: 50%
+          @media screen and (max-width: $mobile)
+            top: 50%
+            font-size: 18rem
+            line-height: 22rem
+      &:after
+        content: ""
+        width: 50px
+        height: 2px
+        background-color: $red
+        top: 50%
+        right: -10rem
+        position: absolute
+        @media screen and (max-width: $tablet)
+          width: 25px
+          transform: rotate(90deg)
+          right: -5rem
+          @media screen and (max-width: $mobile)
+            top: 50%
+            left: -40%
+            right: auto
+            bottom: auto
+            height: 2px
+            width: 8vw
+            transform: translate(-50%,-50%)

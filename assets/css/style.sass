@@ -32,12 +32,24 @@ h1
   @media screen and (max-width: 1860px)
     font-size: 8rem
     line-height: 9rem
+  @media screen and (max-width: $tablet)
+    font-size: 7rem
+    @media screen and (max-width: $mobile)
+      font-size: 5.6rem
+      line-height: 6.66rem
 h2
   font-size: 6.5rem
   line-height: 6.5rem
   color: #000
   font-family: $fontF
   font-weight: 700
+  @media screen and (max-width: $tablet)
+    font-size: 4.66rem
+    line-height: 5.66rem
+    @media screen and (max-width: $mobile)
+      font-size: 4rem
+      line-height: 5rem
+      margin-bottom: 8rem
 h3
   font-size: 3.6rem
   line-height: 4.4rem
@@ -53,19 +65,24 @@ h3
   color: $white
   font-family: $fontF
   font-weight: 300
-  padding: 1rem 7rem
   &:hover
     background-color: #FC2E2E
     border: 2px solid #FFFFFF
     transition: border 500ms
 .main_wrapper
-  padding-top: 18rem
+  //padding-top: 18rem
   position: relative
   overflow: hidden
-  @media screen and (max-width: 1280px)
-    padding-top: 25rem
-  @media screen and (min-width: 1400px)
-    padding-top: 19rem
+  //@media screen and (max-width: 1300px)
+  //  padding-top: 25rem
+  //@media screen and (min-width: 1350px)
+  //  padding-top: 14rem
+  //@media screen and (min-width: 1400px)
+  //  padding-top: 28rem
+  //@media screen and (max-width: $tablet)
+  //  padding-top: 28vh
+  //  @media screen and (max-width: $mobile)
+  //    padding-top: 38.33rem
 .button_up
   position: fixed
   z-index: 90

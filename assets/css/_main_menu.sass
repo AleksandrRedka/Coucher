@@ -9,11 +9,25 @@
   padding-left: 13rem
   background-color: #535353
   transition: 500ms
+  @media screen and (max-width: $tablet)
+    width: 60vw
+    left: -60vw
+    @media screen and (max-width: $mobile)
+      width: 100vw
+      left: -100vw
+      padding-left: 6rem
   &_open
     left: 0
   &_title
     color: $white
     margin-bottom: 5rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 8rem
+      font-size: 11.33rem
+      line-height: 14rem
+      @media screen and (max-width: $mobile)
+        font-size: 7.5rem
+        line-height: 9rem
   &_list
     display: flex
     flex-direction: column
@@ -26,6 +40,12 @@
       font-weight: 700
       color: $white
       position: relative
+      @media screen and (max-width: $tablet)
+        font-size: 3.66rem
+        line-height: 4.5rem
+        @media screen and (max-width: $mobile)
+          font-size: 2.33rem
+          line-height: 3rem
       &:after
         position: absolute
         bottom: -5px
