@@ -58,8 +58,8 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   h2 {
-    font-size: 4.66rem;
-    line-height: 5.66rem;
+    font-size: 6rem;
+    line-height: 7.33rem;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -425,6 +425,7 @@ h3 {
 }
 @media screen and (max-width: 1024px) {
   .header {
+    height: 15rem;
     padding-right: 13.33rem;
     padding-left: 13.33rem;
   }
@@ -446,12 +447,13 @@ h3 {
   top: 2.5%;
   left: 7%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .wrapper_menu {
-    left: 10%;
+    left: 13.33rem;
+    top: 3%;
   }
 }
-@media screen and (max-width: 767px) and (max-width: 767px) {
+@media screen and (max-width: 1024px) and (max-width: 767px) {
   .wrapper_menu {
     width: 8rem;
     height: 8rem;
@@ -538,7 +540,8 @@ h3 {
 }
 @media screen and (max-width: 1024px) {
   .logo {
-    top: 2%;
+    top: 2.2%;
+    left: 22rem;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -579,6 +582,12 @@ h3 {
   top: 3%;
   right: 10%;
 }
+@media screen and (max-width: 1024px) {
+  .header_list_icon {
+    top: 3.5%;
+    right: 13.33rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .header_list_icon {
     width: 20vw;
@@ -612,6 +621,7 @@ h3 {
 
 .main_section {
   width: 100%;
+  height: 100vh;
   padding: 0 13rem;
   padding-bottom: 22rem;
 }
@@ -677,7 +687,7 @@ h3 {
 }
 @media screen and (min-width: 1350px) {
   .main_center_text {
-    padding-top: 14rem;
+    padding-top: 20vh;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -689,7 +699,7 @@ h3 {
   .main_center_text {
     padding: 0;
     padding-top: 28vh;
-    margin-bottom: 20vh;
+    margin-bottom: 17vh;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -802,11 +812,18 @@ h3 {
 }
 @media screen and (max-width: 1024px) {
   .main_section_video_wrapper {
+    width: 45vw;
+    padding-top: 11vw;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1023px) {
+  .main_section_video_wrapper {
     width: 30vw;
+    padding-top: 13vh;
     margin-bottom: 1rem;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 767px) {
+@media screen and (max-width: 1024px) and (max-width: 1023px) and (max-width: 767px) {
   .main_section_video_wrapper {
     width: 100%;
     padding-top: 23vh;
@@ -1027,6 +1044,12 @@ h3 {
   .what_it_coaching {
     padding: 23rem 6rem 0 6rem;
     overflow: visible;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .what_it_coaching_title {
+    font-size: 4.66rem;
+    line-height: 5.5rem;
   }
 }
 
@@ -1892,6 +1915,7 @@ h3 {
     padding: 0 13.33rem;
     margin-bottom: 0;
     padding-top: 17rem;
+    padding-bottom: 10rem;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -2558,6 +2582,7 @@ h3 {
   position: relative;
   z-index: 2;
   width: 40vw;
+  height: auto;
   display: flex;
   flex-direction: row;
   margin-right: 3rem;
@@ -2848,6 +2873,13 @@ h3 {
     width: 100%;
     height: 15rem;
     overflow: hidden;
+    transition: height 500ms;
+  }
+  .about_me_wrapper_text:nth-last-child(-n+2):hover {
+    height: auto;
+  }
+  .about_me_wrapper_text:nth-last-child(-n+2):hover > .icon_more {
+    transform: rotate(180deg);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2895,6 +2927,7 @@ h3 {
   }
 }
 .about_me_title_block {
+  position: relative;
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -2905,7 +2938,8 @@ h3 {
   .about_me_title_block {
     font-size: 3.33rem;
     line-height: 4rem;
-    margin-top: 8.33rem;
+    margin-top: 0;
+    padding-top: 8.33rem;
   }
 }
 .about_me_bg {
@@ -2938,6 +2972,24 @@ h3 {
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+}
+
+.icon_more {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .icon_more {
+    display: block;
+    position: absolute;
+    top: 8.5rem;
+    right: 0;
+    width: 5rem;
+    height: 3rem;
+    transition: 500ms;
+  }
+  .icon_more > img {
+    width: 100%;
   }
 }
 
@@ -2975,6 +3027,7 @@ h3 {
 @media screen and (max-width: 1024px) and (max-width: 767px) {
   .footer_info {
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 .footer_company_create {

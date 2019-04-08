@@ -9,6 +9,7 @@
   height: 10rem
   transition: background-color 500ms
   @media screen and (max-width: $tablet)
+    height: 15rem
     padding-right: 13.33rem
     padding-left: 13.33rem
     @media screen and (max-width: $mobile)
@@ -23,8 +24,9 @@
   z-index: 110
   top: 2.5%
   left: 7%
-  @media screen and (max-width: $mobile)
-    left: 10%
+  @media screen and (max-width: $tablet)
+    left: 13.33rem
+    top: 3%
     @media screen and (max-width: $mobile)
       width: 8rem
       height: 8rem
@@ -84,7 +86,8 @@
   top: 1%
   left: 15%
   @media screen and (max-width: $tablet)
-    top: 2%
+    top: 2.2%
+    left: 22rem
     @media screen and (max-width: $mobile)
       left: 30%
   &_coaching
@@ -110,6 +113,9 @@
   z-index: 90
   top: 3%
   right: 10%
+  @media screen and (max-width: $tablet)
+    top: 3.5%
+    right: 13.33rem
   @media screen and (max-width: $mobile)
     width: 20vw
     display: flex

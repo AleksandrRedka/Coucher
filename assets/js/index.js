@@ -77,28 +77,28 @@ $(document).on('scroll', function () {
     }
 });
 
-// $(document).ready(function () {
-//     $('.reviews_slider').slick({
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         dots: true,
-//         arrows: true,
-//         infinite: true,
-//         prevArrow: '<button class="slick-review slick-prev slick-reviews-prev "><img src="assets/img/svg/Group%2049.svg" alt=""></button>',
-//         nextArrow: '<button class="slick-review slick-next slick-reviews-next "><img src="assets/img/svg/Group%2050.svg" alt=""></button>'
-//         // responsive: [
-//         //     {
-//         //         breakpoint: 1024,
-//         //         settings: {
-//         //             slidesToShow: 2,
-//         //             slidesToScroll: 1,
-//         //             infinite: true,
-//         //             dots: false
-//         //         }
-//         //     },
-//         //
-//
-//         // ]
-//     });
-// });
+$(document).ready(function () {
+    $('.reviews_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        infinite: true,
+        prevArrow: '<button class="slick-review slick-prev slick-reviews-prev "><img src="assets/img/svg/Group%2049.svg" alt=""></button>',
+        nextArrow: '<button class="slick-review slick-next slick-reviews-next "><img src="assets/img/svg/Group%2050.svg" alt=""></button>'
+        // responsive: [
+        //     {
+        //         breakpoint: 1024,
+        //         settings: {
+        //             slidesToShow: 2,
+        //             slidesToScroll: 1,
+        //             infinite: true,
+        //             dots: false
+        //         }
+        //     },
+        //
+
+        // ]
+    });
+});
 
