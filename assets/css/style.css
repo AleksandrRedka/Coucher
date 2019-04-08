@@ -2568,9 +2568,7 @@ h3 {
 }
 .reviews_slider {
   width: 110vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .reviews_slider {
@@ -2581,7 +2579,8 @@ h3 {
   background-color: #FFFFFF;
   position: relative;
   z-index: 2;
-  width: 40vw;
+  width: 100%;
+  min-height: 40vh;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -2595,7 +2594,7 @@ h3 {
 }
 .reviews_slider_item_img {
   width: 32%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   position: relative;
 }
@@ -2610,8 +2609,8 @@ h3 {
   top: 0;
   left: 0;
   background-color: #FFFFFF;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 .reviews_slider_info {
   padding: 3rem;
@@ -2661,6 +2660,10 @@ h3 {
     font-size: 2.66rem;
     line-height: 3.33rem;
   }
+}
+
+.wrapper_reviews_slider {
+  padding: 0 15px;
 }
 
 .wrapper_motivation {

@@ -11,16 +11,15 @@
     margin-bottom: 8rem
   &_slider
     width: 110vw
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+    height: auto
     @media screen and (max-width: $tablet)
       width: 230vw
     &_item
       background-color: $white
       position: relative
       z-index: 2
-      width: 40vw
+      width: 100%
+      min-height: 40vh
       height: auto
       display: flex
       flex-direction: row
@@ -31,7 +30,7 @@
 
       &_img
         width: 32%
-        height: 100%
+        height: auto
         overflow: hidden
         position: relative
         @media screen and (max-width: $tablet)
@@ -42,8 +41,8 @@
           top: 0
           left: 0
           background-color: $white
-          height: 100%
-          width: auto
+          height: auto
+          width: 100%
     &_info
       padding: 3rem
       width: 68%
@@ -77,3 +76,5 @@
         @media screen and (max-width: $tablet)
           font-size: 2.66rem
           line-height: 3.33rem
+.wrapper_reviews_slider
+  padding: 0 15px
