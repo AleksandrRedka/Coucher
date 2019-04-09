@@ -162,11 +162,12 @@ $(document).ready(function () {
     var contentBox = $('.video_box');
     $('.video-js').click(
         function (e) {
+            var clickElem = $(this).children('iframe');
             $('body').addClass('body_hidden');
             $('.view_bg').addClass('view_bg_active')
             $('.wrapper_video').addClass('wrapper_video_open');
             $('.wrapper_menu').css('z-index','10');
-            var elementClone = $(this).children('iframe');
+            var elementClone = clickElem.clone();
             contentBox.append(elementClone);
         }
     )
