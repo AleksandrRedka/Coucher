@@ -911,6 +911,10 @@ h3 {
   width: 100%;
   height: auto;
 }
+.main_section_video_wrapper > iframe {
+  width: 100%;
+  height: auto;
+}
 .main_section_video > a {
   width: 60%;
   font-size: 1.8rem;
