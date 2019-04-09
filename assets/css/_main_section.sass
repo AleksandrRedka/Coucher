@@ -58,14 +58,22 @@
     padding: 0
     padding-top: 28vh
     margin-bottom: 17vh
-    @media screen and (max-width: $mobile)
-      padding-top: 38.33rem
-      margin-bottom: 8.33rem
+    @media screen and (max-width: 767px)
+      padding-top: 22vh
+      margin-bottom: 22vh
+      @media screen and (max-width: 460px)
+        padding: 0
+        padding-top: 35vh
+        margin-bottom: 5vh
 .main_title
   font-family: $fontF
   font-weight: 700
-  @media screen and (max-width: $mobile)
-    margin-bottom: 3rem
+  @media screen and (max-width: 767px)
+    margin-bottom: 1rem
+    font-size: 4.5rem
+    line-height: 5.5rem
+    @media screen and (max-width: 460px)
+      margin-bottom: 3rem
 .main_subtitle_slogan
   font-family: $fontF
   font-weight: 700
@@ -77,10 +85,12 @@
     margin-bottom: 5vh
     font-size: 2.66rem
     line-height: 3.33rem
-    @media screen and (max-width: $mobile)
-      line-height: 3rem
-      width: 70%
-      margin-bottom: 9rem
+    @media screen and (max-width: 767px)
+      font-size: 2rem
+      @media screen and (max-width: 460px)
+        line-height: 3rem
+        width: 70%
+        margin-bottom: 9rem
 .main_subtitle_text
   font-family: $fontF
   font-weight: 400
@@ -107,9 +117,14 @@
     width: 20vw
     right: 7vw
     top: 15vw
-    @media screen and (max-width: $mobile)
-      width: 40vw
-      top: 40vw
+    @media screen and (max-width: 767px)
+      width: 23vw
+      top: 12vw
+      right: 6rem
+      @media screen and (max-width: 460px)
+        width: 40vw
+        right: 7vw
+        top: 40vw
 
 
 .main_section_video
@@ -137,9 +152,12 @@
         width: 30vw
         padding-top: 13vh
         margin-bottom: 1rem
-        @media screen and (max-width: $mobile)
+        @media screen and (max-width: 767px)
           width: 100%
-          padding-top: 23vh
+          padding-top: 75vh
+          @media screen and (max-width: 460px)
+            width: 100%
+            padding-top: 23vh
     &>img
       position: absolute
       top: 0
@@ -182,9 +200,15 @@
         @media screen and (max-width: $mobile)
           height: 45vh
           right: -60%
-          bottom: 12.3%
-          @media screen and (min-width: 411px)
-            bottom: 32%
+          bottom: auto
+          top: 38vh
+          //bottom: 12.3%
+          @media screen and (min-width: 540px)
+            right: 6rem
+            bottom: 31.5%
+          //@media screen and (min-width: 460px)
+          //  right: -60%
+          //  bottom: 32%
 
     &:after
       content: ''
@@ -222,8 +246,12 @@
         @media screen and (max-width: $mobile)
           height: 50vh
           right: -35%
-          bottom: 10.3%
-          @media screen and (min-width: 411px)
+          bottom: auto
+          top: 35vh
+          //bottom: 10.3%
+          @media screen and (min-width: 540px)
+            right: 10vw
+          @media screen and (min-width: 460px)
             bottom: 30%
     &>img
       width: auto
