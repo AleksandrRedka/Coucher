@@ -654,12 +654,7 @@ h3 {
   .main_section {
     padding: 0 6rem;
     position: relative;
-    height: 170vh;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 767px) and (max-width: 350px) {
-  .main_section {
-    height: 200vh;
+    height: 100%;
   }
 }
 .main_section_bg {
