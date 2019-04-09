@@ -22,12 +22,14 @@
     color: $white
     margin-bottom: 5rem
     @media screen and (max-width: $tablet)
-      margin-bottom: 8rem
+      margin-bottom: 6vh
       font-size: 11.33rem
       line-height: 14rem
       @media screen and (max-width: $mobile)
         font-size: 7.5rem
         line-height: 9rem
+        @media screen and (min-width: 550px)
+          margin-bottom: 0
   &_list
     display: flex
     flex-direction: column
@@ -46,6 +48,7 @@
         @media screen and (max-width: $mobile)
           font-size: 2.33rem
           line-height: 3rem
+          margin-bottom: 3vh
       &:after
         position: absolute
         bottom: -5px

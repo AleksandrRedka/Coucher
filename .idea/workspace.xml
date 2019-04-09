@@ -83,20 +83,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/_main_menu.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            <state relative-caret-position="446">
+              <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/_main_section.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
-              <caret line="202" column="22" lean-forward="true" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="246" column="22" lean-forward="true" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -167,7 +167,6 @@
         <option value="$PROJECT_DIR$/assets/css/_o.sass" />
         <option value="$PROJECT_DIR$/assets/css/_benefit_coaching.sass" />
         <option value="$PROJECT_DIR$/assets/css/_motivation.sass" />
-        <option value="$PROJECT_DIR$/assets/css/_main_menu.sass" />
         <option value="$PROJECT_DIR$/assets/css/_form.sass" />
         <option value="$PROJECT_DIR$/assets/css/_opportunities.sass" />
         <option value="$PROJECT_DIR$/assets/css/_your_result.sass" />
@@ -182,6 +181,7 @@
         <option value="$PROJECT_DIR$/assets/js/index.js" />
         <option value="$PROJECT_DIR$/assets/css/_reviews.sass" />
         <option value="$PROJECT_DIR$/assets/css/_main_section.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_main_menu.sass" />
       </list>
     </option>
   </component>
@@ -287,12 +287,12 @@
       <updated>1553783916858</updated>
       <workItem from="1553783918241" duration="6980000" />
       <workItem from="1553852844751" duration="41456000" />
-      <workItem from="1554147057507" duration="122416000" />
+      <workItem from="1554147057507" duration="122650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170852000" />
+    <option name="totallyTimeSpent" value="171086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_main_menu.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_reviews.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
@@ -538,8 +531,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_main_section.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="202" column="22" lean-forward="true" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
+        <state relative-caret-position="323">
+          <caret line="246" column="22" lean-forward="true" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_main_menu.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="45" column="46" lean-forward="true" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
         </state>
       </provider>
     </entry>
