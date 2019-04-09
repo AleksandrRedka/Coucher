@@ -2681,6 +2681,7 @@ h3 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 23rem;
+    padding-bottom: 0;
   }
 }
 .reviews_title {
@@ -2704,6 +2705,7 @@ h3 {
   .reviews_slider {
     width: 100%;
     padding: 0 3rem;
+    padding-bottom: 14rem;
   }
 }
 .reviews_slider_item {
@@ -2867,7 +2869,7 @@ h3 {
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
   .slick-review {
-    width: 6rem;
+    width: 12rem;
     height: 2rem;
     left: 10%;
   }
@@ -2875,8 +2877,8 @@ h3 {
 @media screen and (max-width: 1030px) and (max-width: 1023px) and (max-width: 767px) {
   .slick-review {
     width: 10rem;
-    bottom: -1%;
-    left: 25%;
+    bottom: 7rem;
+    left: 20%;
   }
 }
 .slick-review > img {
@@ -2899,7 +2901,7 @@ h3 {
 @media screen and (max-width: 1030px) and (max-width: 1023px) and (max-width: 767px) {
   .slick-reviews-next {
     width: 10rem;
-    left: 75%;
+    left: 80%;
   }
 }
 
@@ -2918,12 +2920,13 @@ h3 {
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
   .slick-dots {
     left: 15%;
-    bottom: -1%;
+    bottom: -4.5rem;
   }
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) and (max-width: 767px) {
   .slick-dots {
     left: 50%;
+    bottom: 5.5rem;
   }
 }
 .slick-dots > li {
@@ -2936,6 +2939,12 @@ h3 {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .slick-dots > li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 .slick-dots > li:last-child {
   margin-right: 0;

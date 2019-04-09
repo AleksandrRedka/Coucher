@@ -11,6 +11,7 @@
       padding-left: 0
       padding-right: 0
       padding-top: 23rem
+      padding-bottom: 0
   &_title
     margin-bottom: 8rem
     @media screen and (max-width: $tablet)
@@ -23,6 +24,7 @@
       @media screen and (max-width: $mobile)
         width: 100%
         padding: 0  3rem
+        padding-bottom: 14rem
 
     &_item
       background-color: $white
@@ -134,13 +136,13 @@
   @media screen and (max-width: 1030px)
     left: 13%
     @media screen and (max-width: 1023px)
-      width: 6rem
+      width: 12rem
       height: 2rem
       left: 10%
       @media screen and (max-width: $mobile)
         width: 10rem
-        bottom: -1%
-        left: 25%
+        bottom: 7rem
+        left: 20%
   &>img
     width: 100%
 .slick-reviews-next
@@ -151,8 +153,7 @@
       left: 20%
       @media screen and (max-width: $mobile)
         width: 10rem
-
-        left: 75%
+        left: 80%
 
 .slick-dots
   display: flex
@@ -164,9 +165,10 @@
     left: 18%
     @media screen and (max-width: 1023px)
       left: 15%
-      bottom: -1%
+      bottom: -4.5rem
       @media screen and (max-width: $mobile)
         left: 50%
+        bottom: 5.5rem
 
   &>li
     display: inline-block
@@ -178,6 +180,9 @@
     border-radius: 50%
     cursor: pointer
     transition: all .3s ease
+    @media screen and (max-width: $mobile)
+      width: 2.5rem
+      height: 2.5rem
     &:last-child
       margin-right: 0
     &>button

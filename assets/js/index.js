@@ -114,17 +114,15 @@ $(document).ready(function () {
 (function () {
     $('.reviews_slider').on('init', function(event, slick){
         var height = 0;
-        $(window).resize(function() {
-            if ($(window).width() <= '767'){
+            if ($(window).width() > '767'){
                 $('.reviews_slider_info').each(function(){
                     var new_height = $(this).css('height');
                     new_height = parseInt(new_height, 10);
                     if(new_height > height){height = new_height};
                 });
                 $('.reviews_slider_info').css('height', height);
-            }
+            };
 
-        });
     });
 
 })();
