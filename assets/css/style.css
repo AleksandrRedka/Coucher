@@ -718,7 +718,7 @@ h3 {
 }
 @media screen and (min-width: 1400px) {
   .main_center_text {
-    padding-top: 28rem;
+    padding-top: 23vh;
   }
 }
 @media screen and (max-width: 1024px) {
