@@ -551,6 +551,10 @@ h3 {
   z-index: 90;
   top: 1%;
   left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
 }
 @media screen and (max-width: 1024px) {
   .logo {
@@ -794,7 +798,14 @@ h3 {
   line-height: 3rem;
   color: #FFFFFF;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
+  .main_subtitle_text {
+    width: 60%;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 767px) {
   .main_subtitle_text {
     font-size: 2.33rem;
     line-height: 3rem;

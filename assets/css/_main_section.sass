@@ -97,10 +97,14 @@
   font-size: 2.4rem
   line-height: 3rem
   color: $white
-  @media screen and (max-width: $mobile)
-    font-size: 2.33rem
-    line-height: 3rem
+  @media screen and (max-width: $tablet)
     width: 60%
+    font-size: 3rem
+    line-height: 4rem
+    @media screen and (max-width: $mobile)
+      font-size: 2.33rem
+      line-height: 3rem
+      width: 60%
 .bg_text
   width: 15vw
   position: absolute
@@ -152,6 +156,7 @@
         width: 30vw
         padding-top: 13vh
         margin-bottom: 1rem
+
         @media screen and (max-width: 767px)
           width: 100%
           padding-top: 75vh
