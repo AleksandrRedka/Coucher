@@ -43,8 +43,14 @@
       font-size: 3rem
       line-height: 3.66rem
       font-weight: 300
-      margin-top: 14rem
+      margin: 0
+      margin-top: 13vh
       width: 70%
+      padding-bottom: 7vh
+      @media screen and (max-width: 350px)
+        width: 90%
+        margin-bottom: 10vh
+        padding-bottom: 3vh
   &:after
     content: ''
     width: 80%
@@ -85,6 +91,9 @@
 .btn_form
   width: 100%
   transition: 400ms 300ms
+  @media screen and (max-width: $mobile)
+    font-size: 2.66rem
+    line-height: 3rem
   &:hover
     border: 1px solid #FFFFFF
     transition: border 500ms
