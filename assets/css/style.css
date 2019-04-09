@@ -2875,7 +2875,7 @@ h3 {
 @media screen and (max-width: 1030px) and (max-width: 1023px) and (max-width: 767px) {
   .slick-review {
     width: 10rem;
-    bottom: -4.5%;
+    bottom: -1%;
     left: 25%;
   }
 }
@@ -2918,7 +2918,7 @@ h3 {
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
   .slick-dots {
     left: 15%;
-    bottom: -4.5%;
+    bottom: -1%;
   }
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) and (max-width: 767px) {
@@ -2951,7 +2951,7 @@ h3 {
   outline: none;
 }
 
-.slick-active > li {
+.slick-dots > .slick-active {
   background-color: #bbb;
 }
 
@@ -2969,6 +2969,15 @@ h3 {
     font-family: "Montserrat", sans-serif;
     text-decoration: underline;
   }
+}
+
+.show_text {
+  overflow: auto;
+  max-height: none;
+}
+
+.slick-list {
+  transition: height 500ms;
 }
 
 .wrapper_motivation {

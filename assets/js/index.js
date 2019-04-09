@@ -101,10 +101,11 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    adaptiveHeight: true,
                     infinite: true,
                     dots: true,
                 },
-            }
+            },
 
 
         ]
@@ -113,12 +114,17 @@ $(document).ready(function () {
 (function () {
     $('.reviews_slider').on('init', function(event, slick){
         var height = 0;
-        $('.reviews_slider_info').each(function(){
-            var new_height = $(this).css('height');
-            new_height = parseInt(new_height, 10);
-            if(new_height > height){height = new_height};
+        $(window).resize(function() {
+            if ($(window).width() <= '767'){
+                $('.reviews_slider_info').each(function(){
+                    var new_height = $(this).css('height');
+                    new_height = parseInt(new_height, 10);
+                    if(new_height > height){height = new_height};
+                });
+                $('.reviews_slider_info').css('height', height);
+            }
+
         });
-        $('.reviews_slider_info').css('height', height);
     });
 
 })();
@@ -134,4 +140,21 @@ $(document).ready(function () {
            $('.read_more-js').text('Читать...')
     })
 })();
-
+(function () {
+    $('.reviews_slider').on('init', function(event, slick){
+        $('.slider-more-js').click(
+            function () {
+                $('.reviews_slider_info').children('.reviews_slider_info_text').toggleClass('show_text');
+                $('.slick-list').css('height','130rem','outline','none');
+                var textLink = $(this).text();
+                console.log(textLink);
+                if(textLink==='Читать...'){
+                    $('.slider-more-js').text('Cкрыть');
+                    return
+                }else{
+                    $('.slider-more-js').text('Читать...');
+                    $('.slick-list').css('height','85rem','transition','500ms','outline','none');
+                }
+            })
+    });
+})();

@@ -139,7 +139,7 @@
       left: 10%
       @media screen and (max-width: $mobile)
         width: 10rem
-        bottom: -4.5%
+        bottom: -1%
         left: 25%
   &>img
     width: 100%
@@ -164,7 +164,7 @@
     left: 18%
     @media screen and (max-width: 1023px)
       left: 15%
-      bottom: -4.5%
+      bottom: -1%
       @media screen and (max-width: $mobile)
         left: 50%
 
@@ -189,7 +189,7 @@
       font-size: 0
       border-radius: 50%
       outline: none
-.slick-active>li
+.slick-dots>.slick-active
   background-color: #bbb
 .slider_read_more
   display: none
@@ -202,3 +202,8 @@
     line-height: 3rem
     font-family: $fontF
     text-decoration: underline
+.show_text
+  overflow: auto
+  max-height: none
+.slick-list
+  transition: height 500ms
