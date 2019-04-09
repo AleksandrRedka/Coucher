@@ -852,6 +852,7 @@ h3 {
   margin-bottom: 4rem;
   position: relative;
   z-index: 10;
+  cursor: pointer;
 }
 .main_section_video > iframe {
   display: none;
