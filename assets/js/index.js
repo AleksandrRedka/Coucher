@@ -43,6 +43,8 @@ $(document).ready(
                 $('.form').css('display','block');
                 $('.thanks').css('display','none');
                 $('.form_box').css('height','auto');
+                $('.wrapper_video').removeClass('wrapper_video_open');
+                $('.video_box').empty()
             }
         );
         $('.btn_form').click(
@@ -118,7 +120,7 @@ $(document).ready(function () {
                 $('.reviews_slider_info').each(function(){
                     var new_height = $(this).css('height');
                     new_height = parseInt(new_height, 10);
-                    if(new_height > height){height = new_height};
+                    if(new_height > height){height = new_height}
                 });
                 $('.reviews_slider_info').css('height', height);
             };
@@ -155,4 +157,17 @@ $(document).ready(function () {
                 }
             })
     });
+})();
+(function () {
+    var contentBox = $('.video_box');
+    $('.video-js').click(
+        function (e) {
+            $('body').addClass('body_hidden');
+            $('.view_bg').addClass('view_bg_active')
+            $('.wrapper_video').addClass('wrapper_video_open');
+            $('.wrapper_menu').css('z-index','10');
+            var elementClone = $(this).children('iframe');
+            contentBox.append(elementClone);
+        }
+    )
 })();
