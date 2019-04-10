@@ -172,3 +172,12 @@ $(document).ready(function () {
         }
     )
 })();
+(function () {
+    if ($(window).width() < '767'){
+        $('.about_me_open-js').click(
+            function () {
+                $(this).toggleClass('about_me_wrapper_text_show');
+                $(this).children('.icon_more').toggleClass('icon_more_open')
+        })
+    }
+})();

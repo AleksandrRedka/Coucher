@@ -730,7 +730,17 @@ h3 {
   .main_center_text {
     padding: 0;
     padding-top: 28vh;
-    margin-bottom: 17vh;
+    margin-bottom: 12vh;
+  }
+}
+@media screen and (max-width: 1024px) and (width: 1024px) and (height: 768px) {
+  .main_center_text {
+    margin-bottom: 5vh;
+  }
+}
+@media screen and (max-width: 1024px) and (width: 1024px) and (height: 1366px) {
+  .main_center_text {
+    padding-top: 28vh;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -831,7 +841,7 @@ h3 {
   .bg_text {
     width: 20vw;
     right: 7vw;
-    top: 15vw;
+    top: 25vw;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -850,7 +860,7 @@ h3 {
 }
 
 .main_section_video {
-  margin-bottom: 4rem;
+  margin-bottom: 3vh;
   position: relative;
   z-index: 10;
   cursor: pointer;
@@ -869,51 +879,41 @@ h3 {
 @media screen and (max-width: 767px) {
   .main_section_video {
     width: 100%;
+    height: 30vh;
     margin-bottom: 7rem;
   }
 }
 .main_section_video_wrapper {
   width: 14vw;
-  padding-top: 13vh;
+  height: 13vh;
   overflow: hidden;
   margin-right: 3rem;
   position: relative;
 }
 @media screen and (max-width: 1024px) {
   .main_section_video_wrapper {
-    width: 45vw;
-    padding-top: 11vw;
+    width: 25vw;
+    height: 17vh;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1023px) {
   .main_section_video_wrapper {
     width: 30vw;
-    padding-top: 13vh;
     margin-bottom: 1rem;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 1023px) and (max-width: 767px) {
+@media screen and (max-width: 1024px) and (max-width: 1023px) and (max-width: 460px) {
   .main_section_video_wrapper {
     width: 100%;
-    padding-top: 75vh;
+    height: 100%;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 1023px) and (max-width: 767px) and (max-width: 460px) {
-  .main_section_video_wrapper {
-    width: 100%;
-    padding-top: 23vh;
-  }
-}
-.main_section_video_wrapper > img {
+.main_section_video_wrapper > iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-}
-.main_section_video_wrapper > iframe {
-  width: 100%;
-  height: auto;
+  height: 100%;
 }
 .main_section_video > a {
   width: 60%;
@@ -946,12 +946,22 @@ h3 {
   opacity: 0.5;
   z-index: 5;
 }
+@media screen and (width: 1366px) and (height: 1024px) {
+  .main_wrapper_photo_border {
+    right: -15%;
+  }
+}
 @media screen and (max-width: 1030px) {
   .main_wrapper_photo_border {
     height: 70vh;
     bottom: 13%;
     right: -8%;
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1030px) and (max-width: 1024px) and (height: 1366px) {
+  .main_wrapper_photo_border {
+    right: -45%;
   }
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
@@ -1009,11 +1019,21 @@ h3 {
   overflow: hidden;
   opacity: 1;
 }
+@media screen and (max-width: 1366px) and (height: 1024px) {
+  .main_wrapper_photo_coach {
+    right: 10%;
+  }
+}
 @media screen and (max-width: 1030px) {
   .main_wrapper_photo_coach {
     height: 70vh;
     right: 12%;
     bottom: 10.3%;
+  }
+}
+@media screen and (max-width: 1030px) and (width: 1024px) and (height: 1366px) {
+  .main_wrapper_photo_coach {
+    right: -10%;
   }
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
@@ -1430,7 +1450,7 @@ h3 {
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
   .benefit_coaching_img {
-    padding-top: 30vh;
+    padding-top: 17vh;
   }
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) and (max-width: 767px) {
@@ -1456,11 +1476,10 @@ h3 {
 }
 @media screen and (max-width: 1030px) and (max-width: 1023px) {
   .benefit_coaching_img > img {
-    width: auto;
-    height: 100%;
-    left: -65%;
-    top: 0;
-    transform: none;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
   }
 }
 
@@ -3231,11 +3250,10 @@ h3 {
     overflow: hidden;
     transition: height 500ms;
   }
-  .about_me_wrapper_text:nth-last-child(-n+2):hover {
+}
+@media screen and (max-width: 1024px) {
+  .about_me_wrapper_text_show:nth-child(n) {
     height: auto;
-  }
-  .about_me_wrapper_text:nth-last-child(-n+2):hover > .icon_more {
-    transform: rotate(180deg);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -3358,6 +3376,9 @@ h3 {
   .icon_more > img {
     width: 100%;
   }
+}
+.icon_more_open {
+  transform: rotate(180deg);
 }
 
 .about_me_text_open {

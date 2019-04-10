@@ -65,10 +65,10 @@
           margin-bottom: 5rem
           overflow: hidden
           transition: height 500ms
-          &:hover
+      &_show
+        &:nth-child(n)
             height: auto
-            &>.icon_more
-              transform: rotate(180deg)
+
       &:last-child
         margin-bottom: 13.33rem
         @media screen and (max-width: $mobile)
@@ -155,5 +155,7 @@
     transition: 500ms
     &>img
       width: 100%
+  &_open
+    transform: rotate(180deg)
 .about_me_text_open
   height: auto
