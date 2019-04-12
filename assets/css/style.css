@@ -858,6 +858,11 @@ h3 {
     top: 40vw;
   }
 }
+@media screen and (max-width: 1024px) and (max-width: 767px) and (max-width: 460px) and (max-width: 350px) {
+  .bg_text {
+    width: 40vw;
+  }
+}
 
 .main_section_video {
   margin-bottom: 3vh;
